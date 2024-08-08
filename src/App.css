@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
-}
+.stopwatch {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  text-align: center;
+  font-family: Arial, sans-serif;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 200vh;
+ background-color: rgba(255, 237, 167, 0.711);
+}
+.stopwatch img{
+  position: relative;
+  top: -18%;
+  width: 40%;
+  border-radius:50% ;
+}
+.stopwatch h1{
+font-family: 'Jacques Francois';
+font-style: normal;
+font-weight: 400;
+color: rgba(255, 1, 60, 0.69);
+border: rgba(232, 15, 106, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.display {
+  font-size: 2em;
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+.lap-times {
+  margin-top: 20px;
+}
+
+.lap-times ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lap-times li {
+  font-size: 1.2em;
+  margin: 5px 0;
 }
